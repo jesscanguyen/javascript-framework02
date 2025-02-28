@@ -1,7 +1,17 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Javascript Framework II
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+</h1>
+
+
+<div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
+    <img alt="thumbnail" x-bind:src="thumbImage"/>
+</div>
+
+
+            
