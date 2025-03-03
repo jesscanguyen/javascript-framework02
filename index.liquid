@@ -3,15 +3,18 @@ layout: layout.liquid
 title: Javascript Framework II
 ---
 
+<div class="h-screen w-full flex flex-col items-center justify-center">
+    <h1 class="text-3xl font-bold mb-8">
+        Makeup Products
+    </h1>
+<div>
+    <div class="flex gap-8 justify-center items-center">
+        <div class="rounded-md bg-[#1F1D2E]" x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
+            <img alt="thumbnail" x-bind:src="thumbImage" class="w-64 h-64 object-cover rounded-lg shadow-lg"/>
+        </div>
 
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
-
-
-<div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
-    <img alt="thumbnail" x-bind:src="thumbImage"/>
+        <div class="rounded-md bg-[#1F1D2E]" x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/2', jsonItem='thumbnail')}">
+            <img alt="thumbnail" x-bind:src="thumbImage" class="w-64 h-64 object-cover rounded-lg shadow-lg"/>
+        </div>
+    </div>
 </div>
-
-
-            

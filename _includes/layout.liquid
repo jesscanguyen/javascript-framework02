@@ -8,16 +8,16 @@ title: 11ty Boilerplate
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <link href="./styles/output.css" rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
   <script defer src="https://cdn.jsdelivr.net/gh/hankhank10/alpine-fetch@main/alpine-fetch.js"></script>
   <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
+<body>  
+  <nav class="pt-10">
+    <div class="flex items-center justify-center space-x-8">
+        <a href="/" class="font-boldundeline text-gray-300 hover:text-white hover:underline transition-colors duration-200">Home</a>
+        <a href="/write-up/" class="undeline text-gray-300 hover:text-white hover:underline transition-colors duration-200">Write Up</a>
+    </div>
   </nav>
     {{ content }}
 </body>

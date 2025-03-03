@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-karla: "Inter", sans-serif; 
+}
+
+body {
+    background: #191724;
+    color: #E0DEF4;
+    font-family: var(--font-karla)
+}
